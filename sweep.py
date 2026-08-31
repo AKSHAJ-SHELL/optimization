@@ -10,6 +10,7 @@ Plans:
   tier1  tans in tans n=3..27      (soft 2005-2009 records, --record wired in)
   tier2  tans in L's  n=3..18      (soft 2012 records)
   tier3  L's in tans  n=3..22
+  linl   L's in L's   (12 unattacked "Trivial" plateaus, biggest slack first)
   data   diverse small-n mix across families (training-data generation)
   smoke  tiny sanity plan
 
@@ -42,18 +43,50 @@ TRIINTAN = {4: 2.36602, 5: 2.53905, 6: 2.63895, 7: 2.78972, 8: 3.07313,
             9: 3.18252, 10: 3.34084, 11: 3.46951, 12: 3.62487, 13: 3.71163,
             14: 3.88268, 15: 3.98382, 16: 4.03901, 17: 4.20127, 18: 4.27120,
             19: 4.45701, 20: 4.56124, 21: 4.65799, 22: 4.73289, 23: 4.85470}
+# L's in L's -- only 5 entries in the whole family were ever claimed (Morandi
+# 2012 at n=6,11,12 and June 2026 at n=19,20); every other value is a "Trivial"
+# axis-aligned plateau. Morandi beat the trivial plateau on all five he tried.
+# Area bound is s >= sqrt(n) (unit L has area 3, container L of side s has 3s^2).
+# n=9,16,25 are perfect tilings (s = sqrt(n) exactly) -- proven optimal, skipped.
+# Page ends at n=25; n>=26 are unclaimed new entries. Scraped 2026-08-30.
+LINL = {2: 2.0, 5: 2.5, 6: 2.885619, 7: 3.0, 8: 3.0, 10: 3.5,
+        11: 3.747548, 12: 3.965990, 13: 4.0, 14: 4.0, 15: 4.0,
+        17: 4.5, 18: 4.5, 19: 4.767767, 20: 4.901651,
+        21: 5.0, 22: 5.0, 23: 5.0, 24: 5.0}
+LINL_EXACT = (9, 16, 25)          # perfect tilings; nothing to beat
 
 
 def plan_items(name):
     if name == "tier1":
-        return [("tan", n, "tan", TANINTAN.get(n)) for n in range(3, 28)]
+        # page ends at n=27; n=28..32 are unclaimed new entries
+        return [("tan", n, "tan", TANINTAN.get(n)) for n in range(3, 33)]
     if name == "tier2":
-        return [("tan", n, "L", TANINL.get(n)) for n in range(3, 19)]
+        # page ends at n=17; n=18..23 are unclaimed new entries
+        return [("tan", n, "L", TANINL.get(n)) for n in range(3, 24)]
     if name == "tier3":
-        return [("L", n, "tan", LINTAN.get(n)) for n in range(2, 23)]
+        # page ends at n=22; n=23..27 are unclaimed new entries
+        return [("L", n, "tan", LINTAN.get(n)) for n in range(2, 28)]
     if name == "tri":
         # n=27..30 requested by the registry maintainer (July 2026)
         return [("ngon:3", n, "tan", TRIINTAN.get(n)) for n in range(4, 31)]
+    if name == "linl":
+        # Softest surface on the site. Run order matters here:
+        #   1. untouched "Trivial" plateaus (record is an exact multiple of
+        #      0.5 with no finder) -- nobody has ever optimized these, and
+        #      Morandi beat the plateau on all five instances he did try;
+        #   2. unclaimed new entries past the page end (n >= 26);
+        #   3. Morandi's own values last -- their slack to the area bound is
+        #      large only because L-trominoes waste space, not because they
+        #      are loose, so they are the hardest targets, not the easiest.
+        # Within each group, biggest slack to the sqrt(n) bound first.
+        def group(n):
+            r = LINL.get(n)
+            if r is None:
+                return 1                      # new territory
+            return 0 if abs(r * 2 - round(r * 2)) < 1e-9 else 2
+        ns = [n for n in range(5, 31) if n not in LINL_EXACT]
+        ns.sort(key=lambda n: (group(n), -((LINL.get(n) or n ** 0.5) - n ** 0.5)))
+        return [("L", n, "L", LINL.get(n)) for n in ns]
     if name == "data":
         items = []
         for shape, cont in [("tan", "tan"), ("tan", "L"), ("tan", "square"),
@@ -71,7 +104,7 @@ def plan_items(name):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--plan", default="data",
-                    choices=["tier1", "tier2", "tier3", "tri", "data",
+                    choices=["tier1", "tier2", "tier3", "tri", "linl", "data",
                              "smoke"])
     ap.add_argument("--attempts", type=int, default=300)
     ap.add_argument("--elite-rounds", type=int, default=5)

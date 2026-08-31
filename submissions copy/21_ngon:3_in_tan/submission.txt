@@ -1,0 +1,14 @@
+Subject: improved packing: 21 equilateral triangles in a tan
+
+Dear Erich,
+
+I believe I have an improved packing of 21 unit equilateral triangles in a tan:
+
+    s = 4.641413377   (current page value: 4.65799)
+
+(safe value to submit: s = 4.64141337792 (rounded up past worst-case violation; quote fewer digits to be safer))
+
+The configuration was found by a basin-hopping optimizer with exact autodiff gradients and verified independently in 50-digit arithmetic (max overlap and containment violation below 1e-9; audit values in the attached coordinates file). Picture and full-precision coordinates attached.
+
+Best regards,
+Akshaj Shandilya

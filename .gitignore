@@ -1,0 +1,24 @@
+# Model weights and LoRA adapters (~3.3 GB). Regenerate with train_sft.sh /
+# quickstart_tune.sh; the proposer is pointed at these with --model.
+model_quick/
+model_sft/
+model_dpo/
+model_dpo_mlx/
+adapters_sft/
+adapters_quick/
+
+# Training-data logs (~49 MB, 2691 files). Regenerated as a side effect of any
+# `sweep.py --log` run; make_dataset.py turns these into data/*.jsonl, which IS
+# tracked.
+logs/
+
+# Packaging archives and backups (~185 MB)
+*.zip
+ziBn3MfX
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Editor / OS
+.DS_Store

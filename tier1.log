@@ -1,0 +1,122 @@
+[sweep] skip 3_tan_in_tan (exists; --redo to rerun)
+[sweep] skip 4_tan_in_tan (exists; --redo to rerun)
+[sweep] skip 5_tan_in_tan (exists; --redo to rerun)
+[sweep] skip 6_tan_in_tan (exists; --redo to rerun)
+[sweep] skip 7_tan_in_tan (exists; --redo to rerun)
+[sweep] skip 8_tan_in_tan (exists; --redo to rerun)
+[sweep] skip 9_tan_in_tan (exists; --redo to rerun)
+[sweep] skip 10_tan_in_tan (exists; --redo to rerun)
+[sweep] skip 11_tan_in_tan (exists; --redo to rerun)
+[sweep] skip 12_tan_in_tan (exists; --redo to rerun)
+[sweep] 11/25 13_tan_in_tan (record 3.7071)
+[13 x tan in tan]  area lower bound s >= 3.605551
+initial pool best s = 3.814406403  (800 feasible, 187s)
+elite round 1: best s = 3.799608873
+elite round 2: best s = 3.799608873
+elite round 3: best s = 3.799608873
+elite round 4: best s = 3.776016684
+elite round 5: best s = 3.776016684
+elite round 6: best s = 3.776016684
+
+BEST:  s = 3.7645215249
+audit: max pairwise overlap = 1.90e-11, max containment violation = 1.20e-11
+record s = 3.7071:  misses record by 0.0574215
+wrote runs/13_tan_in_tan.json and runs/13_tan_in_tan.png  (410s total)
+[sweep] 12/25 14_tan_in_tan (record 3.8284)
+[14 x tan in tan]  area lower bound s >= 3.741657
+initial pool best s = 3.939494622  (800 feasible, 200s)
+elite round 1: best s = 3.915113990
+elite round 2: best s = 3.915113990
+elite round 3: best s = 3.915113990
+elite round 4: best s = 3.915113990
+elite round 5: best s = 3.869076131
+elite round 6: best s = 3.869076131
+
+BEST:  s = 3.8535543027
+audit: max pairwise overlap = 6.16e-12, max containment violation = 1.10e-11
+record s = 3.8284:  misses record by 0.0251543
+wrote runs/14_tan_in_tan.json and runs/14_tan_in_tan.png  (236s total)
+[sweep] 13/25 15_tan_in_tan (record 3.9142)
+[15 x tan in tan]  area lower bound s >= 3.872983
+initial pool best s = 4.076570318  (800 feasible, 230s)
+elite round 1: best s = 4.076570318
+elite round 2: best s = 4.076570318
+elite round 3: best s = 4.076570318
+elite round 4: best s = 4.008504504
+elite round 5: best s = 4.008504504
+elite round 6: best s = 4.008504504
+
+BEST:  s = 4.0000008387
+audit: max pairwise overlap = 8.39e-12, max containment violation = 7.81e-12
+record s = 3.9142:  misses record by 0.0858008
+wrote runs/15_tan_in_tan.json and runs/15_tan_in_tan.png  (272s total)
+[sweep] 14/25 16_tan_in_tan (record None)
+[16 x tan in tan]  area lower bound s >= 4.000000
+initial pool best s = 4.189181415  (800 feasible, 231s)
+elite round 1: best s = 4.164640833
+elite round 2: best s = 4.164640833
+elite round 3: best s = 4.147384715
+elite round 4: best s = 4.147384715
+elite round 5: best s = 4.147384715
+elite round 6: best s = 4.147384715
+
+BEST:  s = 4.1468327302
+audit: max pairwise overlap = 1.62e-11, max containment violation = 1.50e-11
+wrote runs/16_tan_in_tan.json and runs/16_tan_in_tan.png  (277s total)
+[sweep] 15/25 17_tan_in_tan (record 4.1817)
+[17 x tan in tan]  area lower bound s >= 4.123106
+initial pool best s = 4.330546696  (800 feasible, 309s)
+elite round 1: best s = 4.330546696
+elite round 2: best s = 4.330546696
+elite round 3: best s = 4.330546696
+elite round 4: best s = 4.330546696
+elite round 5: best s = 4.330546696
+elite round 6: best s = 4.330546696
+
+BEST:  s = 4.3284287702
+audit: max pairwise overlap = 5.83e-11, max containment violation = 4.55e-11
+record s = 4.1817:  misses record by 0.146729
+wrote runs/17_tan_in_tan.json and runs/17_tan_in_tan.png  (371s total)
+[sweep] 16/25 18_tan_in_tan (record None)
+[18 x tan in tan]  area lower bound s >= 4.242641
+initial pool best s = 4.533254826  (800 feasible, 295s)
+elite round 1: best s = 4.533254826
+elite round 2: best s = 4.533254826
+elite round 3: best s = 4.533254826
+elite round 4: best s = 4.533254826
+elite round 5: best s = 4.533254826
+elite round 6: best s = 4.533254826
+
+BEST:  s = 4.5332489424
+audit: max pairwise overlap = 2.26e-11, max containment violation = 2.80e-11
+wrote runs/18_tan_in_tan.json and runs/18_tan_in_tan.png  (355s total)
+[sweep] 17/25 19_tan_in_tan (record 4.4137)
+[19 x tan in tan]  area lower bound s >= 4.358899
+initial pool best s = 4.690850104  (800 feasible, 286s)
+elite round 1: best s = 4.690850104
+elite round 2: best s = 4.690850104
+elite round 3: best s = 4.661493393
+elite round 4: best s = 4.661493393
+elite round 5: best s = 4.661493393
+elite round 6: best s = 4.661493393
+
+BEST:  s = 4.6490862454
+audit: max pairwise overlap = 9.81e-12, max containment violation = 6.86e-12
+record s = 4.4137:  misses record by 0.235386
+wrote runs/19_tan_in_tan.json and runs/19_tan_in_tan.png  (337s total)
+[sweep] 18/25 20_tan_in_tan (record 4.5357)
+[20 x tan in tan]  area lower bound s >= 4.472136
+initial pool best s = 4.819640826  (800 feasible, 282s)
+elite round 1: best s = 4.819640826
+elite round 2: best s = 4.819640826
+elite round 3: best s = 4.819640826
+elite round 4: best s = 4.789187683
+elite round 5: best s = 4.789187683
+elite round 6: best s = 4.789187683
+
+BEST:  s = 4.7812215675
+audit: max pairwise overlap = 8.63e-11, max containment violation = 9.55e-11
+record s = 4.5357:  misses record by 0.245522
+wrote runs/20_tan_in_tan.json and runs/20_tan_in_tan.png  (346s total)
+[sweep] 19/25 21_tan_in_tan (record 4.6817)
+[21 x tan in tan]  area lower bound s >= 4.582576

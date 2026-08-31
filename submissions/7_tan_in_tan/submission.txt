@@ -1,0 +1,14 @@
+Subject: improved packing: 7 tans in a tan
+
+Dear Erich,
+
+I believe I have an improved packing of 7 unit tans in a tan:
+
+    s = 2.824347536   (current page value: 2.8245)
+
+(safe value to submit: s = 2.82434753592 (rounded up past worst-case violation; quote fewer digits to be safer))
+
+The configuration was found by a basin-hopping optimizer with exact autodiff gradients and verified independently in 50-digit arithmetic (max overlap and containment violation below 1e-9; audit values in the attached coordinates file). Picture and full-precision coordinates attached.
+
+Best regards,
+Akshaj Shandilya

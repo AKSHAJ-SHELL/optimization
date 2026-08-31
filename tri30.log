@@ -1,0 +1,85 @@
+[sweep] skip 4_ngon3_in_tan (exists; --redo to rerun)
+[sweep] skip 5_ngon3_in_tan (exists; --redo to rerun)
+[sweep] skip 6_ngon3_in_tan (exists; --redo to rerun)
+[sweep] skip 7_ngon3_in_tan (exists; --redo to rerun)
+[sweep] skip 8_ngon3_in_tan (exists; --redo to rerun)
+[sweep] skip 9_ngon3_in_tan (exists; --redo to rerun)
+[sweep] skip 10_ngon3_in_tan (exists; --redo to rerun)
+[sweep] skip 11_ngon3_in_tan (exists; --redo to rerun)
+[sweep] skip 12_ngon3_in_tan (exists; --redo to rerun)
+[sweep] skip 13_ngon3_in_tan (exists; --redo to rerun)
+[sweep] skip 14_ngon3_in_tan (exists; --redo to rerun)
+[sweep] skip 15_ngon3_in_tan (exists; --redo to rerun)
+[sweep] skip 16_ngon3_in_tan (exists; --redo to rerun)
+[sweep] skip 17_ngon3_in_tan (exists; --redo to rerun)
+[sweep] skip 18_ngon3_in_tan (exists; --redo to rerun)
+[sweep] skip 19_ngon3_in_tan (exists; --redo to rerun)
+[sweep] skip 20_ngon3_in_tan (exists; --redo to rerun)
+[sweep] skip 21_ngon3_in_tan (exists; --redo to rerun)
+[sweep] skip 22_ngon3_in_tan (exists; --redo to rerun)
+[sweep] skip 23_ngon3_in_tan (exists; --redo to rerun)
+[sweep] skip 24_ngon3_in_tan (exists; --redo to rerun)
+[sweep] skip 25_ngon3_in_tan (exists; --redo to rerun)
+[sweep] skip 26_ngon3_in_tan (exists; --redo to rerun)
+[sweep] 24/27 27_ngon3_in_tan (record None)
+[27 x ngon:3 in tan]  area lower bound s >= 4.835565
+initial pool best s = 5.234415292  (1000 feasible, 507s)
+elite round 1: best s = 5.234415292
+elite round 2: best s = 5.234415292
+elite round 3: best s = 5.200426446
+elite round 4: best s = 5.200426446
+elite round 5: best s = 5.200426446
+elite round 6: best s = 5.200426446
+elite round 7: best s = 5.200426446
+elite round 8: best s = 5.200426446
+
+BEST:  s = 5.1977340310
+audit: max pairwise overlap = 1.99e-11, max containment violation = 1.55e-11
+wrote runs/27_ngon3_in_tan.json and runs/27_ngon3_in_tan.png  (616s total)
+[sweep] 25/27 28_ngon3_in_tan (record None)
+[28 x ngon:3 in tan]  area lower bound s >= 4.924298
+initial pool best s = 5.329031839  (1000 feasible, 524s)
+elite round 1: best s = 5.329031839
+elite round 2: best s = 5.329031839
+elite round 3: best s = 5.329031839
+elite round 4: best s = 5.329031839
+elite round 5: best s = 5.329031839
+elite round 6: best s = 5.329031839
+elite round 7: best s = 5.329031839
+elite round 8: best s = 5.329031839
+
+BEST:  s = 5.3236792292
+audit: max pairwise overlap = 8.36e-12, max containment violation = 9.14e-12
+wrote runs/28_ngon3_in_tan.json and runs/28_ngon3_in_tan.png  (646s total)
+[sweep] 26/27 29_ngon3_in_tan (record None)
+[29 x ngon:3 in tan]  area lower bound s >= 5.011461
+initial pool best s = 5.437185916  (1000 feasible, 543s)
+elite round 1: best s = 5.432894191
+elite round 2: best s = 5.432894191
+elite round 3: best s = 5.432894191
+elite round 4: best s = 5.432894191
+elite round 5: best s = 5.432894191
+elite round 6: best s = 5.432894191
+elite round 7: best s = 5.432894191
+elite round 8: best s = 5.432894191
+
+BEST:  s = 5.4055278606
+audit: max pairwise overlap = 1.25e-10, max containment violation = 1.46e-10
+wrote runs/29_ngon3_in_tan.json and runs/29_ngon3_in_tan.png  (4763s total)
+[sweep] 27/27 30_ngon3_in_tan (record None)
+[30 x ngon:3 in tan]  area lower bound s >= 5.097133
+initial pool best s = 5.501322627  (1000 feasible, 472s)
+elite round 1: best s = 5.501322627
+elite round 2: best s = 5.466231794
+elite round 3: best s = 5.466231794
+elite round 4: best s = 5.466231794
+elite round 5: best s = 5.466231794
+elite round 6: best s = 5.466231794
+elite round 7: best s = 5.466231794
+elite round 8: best s = 5.466231794
+
+BEST:  s = 5.4626298850
+audit: max pairwise overlap = 3.24e-11, max containment violation = 2.75e-11
+wrote runs/30_ngon3_in_tan.json and runs/30_ngon3_in_tan.png  (863s total)
+
+[sweep] done in 114.9 min; summary -> runs/summary.csv

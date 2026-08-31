@@ -79,3 +79,4 @@ Outputs: `<prefix>.json` (coordinates + audit) and `<prefix>.png` (picture).
 Audit line must show violations < 1e-11, then independently re-verify the JSON
 coordinates in high precision (mpmath), then submit to Friedman. Quote s
 conservatively (round UP at the digit you trust).
+# optimization
